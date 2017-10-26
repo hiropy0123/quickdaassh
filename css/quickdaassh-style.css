@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.welcome-panel-close,
+#screen-options-wrap label[for="wp_welcome_panel-hide"] {
+display: none;
+}
+#welcome-panel {
+display: block;
+}
+.welcome-panel {
+padding: 20px 20px 10px;
+}
+.welcome-panel ul {
+margin-left: -20px;
+list-style: none;
+}
+.welcome-panel ul li {
+display: inline-block;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+.welcome-panel .button {
+position: relative;
+min-width: 150px;
+height: auto;
+padding: 40px 20px 5px;
+font-size: 15px;
+text-align: center;
+border-radius: 7px;
+}
+.welcome-panel .button::before {
+position: absolute;
+top: 12px;
+left: 50%;
+font-size: 28px;
+font-family: 'dashicons';
+transform: translateX(-50%);
+}
+.welcome-panel .post-foo::before {
+content: '\f348';
+}
+.welcome-panel .post-bar::before {
+content: '\f331';
+}
+.welcome-panel .page::before {
+content: '\f105';
+}
+.welcome-panel .button[href^="post"]::after {
+position: absolute;
+top: 12px;
+left: calc(50% + 15px);
+content: '\f464';
+font-size: 24px;
+font-family: 'dashicons';
+transform: translateX(-50%);
+}
